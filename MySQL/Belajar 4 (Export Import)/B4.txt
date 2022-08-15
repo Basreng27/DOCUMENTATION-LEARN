@@ -1,0 +1,13 @@
+//Export
+//langka export DB
+	- Buka Cmd //Setelah di runing XAMPP nya
+	- cd C:/xampp/mysql
+	- cd bin (harus masuk bin)
+	- mysqldump -u root -p <DB yang akan di export > > <tempat penyimpanan C:/<nm>.sql>
+
+//langkah import DB
+	//harus membuat DB kosong terlebih dulu
+	- Buka Cmd //Setelah di runing XAMPP nya
+	- cd C:/xampp/mysql
+	- cd bin (harus masuk bin)
+	- mysql -u root -p -D <nm DB yang baru dibuat> < <tempat penyimpanan DB C:/<nm>.sql>

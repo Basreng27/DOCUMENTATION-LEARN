@@ -1,0 +1,14 @@
+link : https://www.youtube.com/watch?v=8rry2ncZmfg&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf&index=4
+
+FORK atau duplikat repository orang
+
+FORK != Clone
+
+Clone menduplikat dari claude kita
+
+pertama cari repo orang yang ingin di duplikat 
+kemudian klik reponya 
+lalu clik "fork"
+
+untuk nmengajukan pull ke repo asal
+klik "new pull request"

@@ -1,0 +1,12 @@
+link : https://www.youtube.com/watch?v=rgDDWhQe-ow&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf&index=9
+
+membuat github sebagai web hosting
+
+untuk membuat pages di github tidak sembarang
+untuk pembuatan repo baru namanya harus <nama akun github>.github.io //wajib repository
+membuat menjadi github pages yaitu
+masuk ke repo yang ingin di jadikan pages
+masuk ke setting
+cari github pages
+sourcenya pilih branch yang akan di ubah menjadi page
+costume domain asal .io menjadi .com

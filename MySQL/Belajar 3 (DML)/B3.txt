@@ -1,0 +1,44 @@
+//DML
+//Menampilkan semua isi tabel
+	SELECT * FROM <nama tabel>
+
+//Menginputkan isi pada tabel
+	INSERT INTO <nama tabel> VALUES (<isi>, <isi>, <isi>, <isi>),  (<isi>, <isi>, <isi>, <isi>);
+
+//menggunakan auto increment
+	ALTER TABLE <nama tabel> CHANGE <nama field> <nama field baru> <tipe data> (...) NOT NULL AUTO_INCREMENT;
+
+//menampilkan 1 field semua data
+	SELECT <nama field> FROM <nama tabel>;
+
+//menampilkan 2 atau lebih fiel
+	SELECT <nama field>, <nm field> FROM <nama tabel>;
+
+//menampilkan misal dengan jenis kelamin sama 2 lk 3 cw hasilnya menjadi 1lk 2cw
+	SELECT DISTINCT <nm field>;
+
+//menampilkan dengan kondisi tertentu
+	SELECT <nm field> FROM <nm tabel> WHERE <nm field> = "<kondisi>";
+
+//menampilkan dengan batasan
+	SELECT <nm field> FROM <nm tabel> WHERE <nm field> BETWEEN <kondisi> AND <kondisi>;
+
+//menampilkan data secara detail
+	SELECT <nm field> FROM <nm tabel> WHERE <nm field> LIKE "<kondisi>";
+
+<kondisi>% //data dengan awalan kondisi
+%<kondisi> //data dengan akhir kondisi
+&<kondisi>% //data dengan tengah kondisi
+
+//update semua data pada atribut
+	UPDATE <nm tabel> SET <nm field> = "<kondisi>";
+
+//update data dengan kondisi tertentu
+	UPDATE <nm tabel> SET <nm field> = "<kondisi>" WHERE = "<kondisi>";
+
+//update data dengan 2 atau lebih kondisi tertentu
+	UPDATE <nm tabel> SET <nm field> = "<kondisi>", <nm field> = "<kondisi>" WHERE = "<kondisi>";
+
+//menghapus data tertentu
+	DELETE FROM <nm tabel> WHERE <nm field> = "<kondisi>"
+	

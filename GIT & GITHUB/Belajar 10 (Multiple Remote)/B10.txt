@@ -1,0 +1,6 @@
+link : https://www.youtube.com/watch?v=XeOf2wdnFlc&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf&index=10
+
+Multiple Remote = terhubung ke beberapa remote
+
+perintah
+git remote add <nama github> <link https>

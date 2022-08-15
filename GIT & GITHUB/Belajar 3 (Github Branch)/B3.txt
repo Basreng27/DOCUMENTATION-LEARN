@@ -1,0 +1,19 @@
+link : https://www.youtube.com/watch?v=k1QXd-8VbPY&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf&index=3
+
+Branch atau cabang dengn Github
+
+buat branch baru di atas project ada tulisan branch, ketik branch baru
+lalu commit sesuai branch 
+
+kemudian untuk menggabungkan branch cabang dan default
+untuk merge klik "compare & pull request" berwarna hijau
+lalu pastikan ada ceklis hijau yaitu "Able to merge", kalau warnanya merah berarti ada hal yang harus di perbaiki atau bisa disebut merge conflict
+lalu klik "pull request" untuk meminta request ke master branch
+lalu klik "merge pull request"
+lalu "confirm merge"
+
+kemudian jika sudah di merge hapus branch yang sblmnya atau branch yang tidak terpakai
+klik branches
+lalu klik tombol sampah di kanan
+
+jika ada merge conflict branch masih bisa men commit data tepapi harus di perhatikan bahwa master yang harus menyelesaikannya

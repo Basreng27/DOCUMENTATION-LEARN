@@ -1,0 +1,64 @@
+//DCL
+//oprator logika
+	//NOT
+	!=
+	//AND
+	&&
+	//OR
+	||
+	BETWEEN
+	LIKE
+
+//cara reset Auto increment
+	ALTER TABLE <nm tabel> AUTO_INCREMENT = 0;
+
+//Alias contoh nama field "nama_mahasiswa" di tampilkan menjadi "nama"  
+	SELECT <nm field> AS "<mau di ganti menjadi apa>" FROM <nm tabel>;
+	SELECT DISTINCT(<nm field>) AS "<mau di ganti menjadi apa>" FROM <nm tabel>;
+
+//alias multi kolom
+	SELECT <nm field> AS "<mau di ganti menjadi apa>",nm <field> AS "<mau di ganti menjadi apa>" FROM <nm tabel>;
+
+//fungsi Agregat
+	//count menghitung jumlah record
+	SELECT COUNT(*) FROM <nm tabel>;
+	
+	//sum untuk menjumlahkan isi field
+	SELECT SUM(<nm field>) FROM <nm tabel>;
+
+	//average menghitung nilai rata-rata dalam suatu field
+	SELECT AVG(<nm field>) FROM <nm tabel>;
+
+	//min mencari nilai paling kecil
+	SELECT MIN(<nm field>) FROM <nm tabel>;
+
+	//max nilai paling besar
+	SELECT MAX(<nm field>) FROM <nm tabel>;
+
+//pengurutan order By
+	//kecil -> besar = ascending
+	SELECT * FROM <nm tabel> ORDER BY <nm field> ASC;
+
+	//besar ->kecil = descending
+	SELECT * FROM <nm tabel> ORDER BY <nm field> DESC;
+
+//select limit yaitu membatasi data yang akan di tampilkan
+	SELECT * FROM <nm tabel> LIMIT <batas yang di inginkan>;
+
+//group by => pengelompokan data
+	SELECT <nm field> FROM <nm tabel> GROUP BY <nm field> ;
+
+//group by combine agregat dan alias
+	SELECT <nm field>, COUNT(*) AS "<nm alias>" FROM <nm tabel> GROUP BY <nm field> ;
+
+//membuat relasi dengan foregn key
+	ALTER TABLE <nm tabel> ADD FOREIGN KEY (<field yang akan di relasikan>) REFERENCE <nm tabel yang menjadi referensi> (<field yang direferensikan>);
+
+//inner join semua data
+	SELECT * FROM <nm tabel1> INNER JOIN <nm tabel2> ON <nm tabel1>.<nm field1> = <nm tabel 2>.<nm field2>;
+
+//inner join using //syarat nama primary dan foreign keynya harus sama di kedua tabel
+	SELECT * FROM <nm tabel1> INNER JOIN <nm tabel2> USING (<nm field>);
+
+//left join harus ada field <tabel 2> yang berada di <tabel 1>
+	SELECT * FROM <nm tabel1> LEFT JOIN <nm tabel2> ON <nm tabel1>.<nm field1> = <nm tabel 2>.<nm field2>;

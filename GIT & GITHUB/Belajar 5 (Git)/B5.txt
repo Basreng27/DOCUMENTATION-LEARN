@@ -1,0 +1,39 @@
+link : https://www.youtube.com/watch?v=e-6OkXRqWaE&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf&index=5
+
+download git : https://git-scm.com/
+
+lalu install menggunakan console / cmd
+setelah di install buka git dari cmd
+untuk mengakses help pada git cukup ketik "git" di gitbash atau cmd
+ada 3 area pada repo git :
+	working tree = folder atau repo
+	staging area = menyimpan perubahan pada repo
+	history = history commit repo
+perintah : 
+	git add = menyimpan perubahan ke staging area dari repo/working tree
+	git commit untuk mengcommit dari staging area ke history
+	clear = menghilangkan isi dari terminalnya
+	git --version = mengecek versi git
+	pwd = print working directory untuk mengetahui kita sedang dimana
+	ls = untung mengetahui folder dan file yang terletak pada lokasi yang sedang berada
+	cd = change directory, untuk mengganti folder yang sedang ditempati
+	git init = untuk menginisialisasikan folder sebagai repo
+		caranya masuk ke dalam folder yang akan di buat menjadi  repo 
+		lalu ketikan "git init"
+		dan foldernya akan berubah menjadi repo git dan menjadi branch master yang di pantau oleh git
+	git status = untuk mengetahu file yang berubah, terhapus, dll. sebelum melakukan commit
+	git add <file> = untuk melakukan perubahan ke staging area
+	git rm --cacher <file> = untuk mengeluarkan file dari staging area kembali ke working tree
+	git config --globat user.email "wandirayandra@gmail.com" = untuk menginisialisai email sendiri
+	git config --global user.name "Rayandra Wandi Marselana" = untuk menginisialisai nama user/sendiri
+	git commit = melakukan commit dan langsung masuk ke code editor yang sudah disetting saat install
+		kalau masuk ke code editor lain tekan "Esc" lalu ketikan ":q!"
+	git commit -m "Menambahkan file index.html" = memasukan pesan saat commit
+		"-m" artinya tambahkan message berikut
+	git add . = untuk melakukan pemindahan data dari working tree ke staging area dengan lebih dari 1 file
+	git log = untuk mengetahui apa saja yang telah di lakukan dan commit apa saja yang telah di commit
+	git log -3 = menampilkan log 3 terbaru
+	git log -- <file> = untuk mengetahui log dari file yang dipilih
+	git checkout <5 digit hash pada commit> -- <file> = untuk mengembalikan file ke keadan semula atau sebelum di hapus / kembali ke sebuah commit sebelumnya
+	
+	

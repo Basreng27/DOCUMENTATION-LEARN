@@ -1,0 +1,40 @@
+//cara masuk ke DB xampp
+	- Buka Cmd //Setelah di runing XAMPP nya
+	- cd C:/xampp/mysql
+	- cd bin
+	- mysql -u root -p//-u perintah memasukan username //-p untuk password
+	- SHOW DATABASES; //untuk menampilkan semua database
+	- SHOW TABLES; //menampilkan tabel
+
+//Membuat database
+	CREATE DATABASE <nama DB> ;
+
+//Create & Drop
+//Masuk kedalam DB
+	USE <nama DB> ;
+
+//Menghapus database
+	DROP DATABASE <nama DB> ;
+
+//Membuat tabel
+	CREATE TABLE <nama tabel> (<nama field> <tipe data>(...) PRIMARY KEY, <nama field> <tipe data>(...), j<nama field> <tipe data>(...), <nama field> <tipe data>(...));
+
+//Mengecek atribut tabel
+	DESCRIBE <nama tabel>;
+	DESC <nama Tabel>;
+
+//Menghapus tabel
+	DROP TABLE <nama tabel>
+
+//Alter
+//mengubah nama tabel
+	ALTER TABLE <nama tabel> RENAME <nama tabel baru>;
+
+//mengubah nama struktur/field
+	ALTER TABLE <nama tabel> CHANGE <nama field>  <nama field baru> <tipe data>(...);
+
+//menambah kolom/field tabel
+	ALTER TABLE <nama tabel> ADD <nama field> <tipe data> (...);
+
+//menghapus kolom/atribut tabel
+	ALTER TABLE <nama tabel> DROP <nama field>;

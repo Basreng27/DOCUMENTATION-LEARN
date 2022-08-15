@@ -1,0 +1,21 @@
+//Query Sql
+//DDL (Data Definition Languange)
+	Create -> Membuat
+	Alter -> Untuk perubahan struktur tabel
+	Drop -> Menghapus
+
+//DML (Data Manipulation Language)
+	Select -> Menampilkan data
+	Insert -> menginputkan data
+	Update ->	merubah data
+	Delete ->menghapus data
+
+//DCL (Data Control Language)
+	Grant -> Mengizinkan user mengakses tabel DB
+	Revoke -> Membatalkan hak izin user
+	Commit -> Menetapkan penyimpanan DB
+	Rollback -> Membatalkan penyimpanan DB
+	
+	
+	
+	

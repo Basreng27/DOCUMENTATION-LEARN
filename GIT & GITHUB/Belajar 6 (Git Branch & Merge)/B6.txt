@@ -1,0 +1,23 @@
+Link : https://www.youtube.com/watch?v=EGl7KxVOyNs&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf&index=6
+
+Git Branch & Merge Local
+
+Perintah
+	git branch = mengetahui branch mana yang aktif
+		jika isinya branch hijau lalu ada bintang itu adalah branch yang sedang aktif
+	git branch <nama_branch> = untuk membuat branch baru atau cabang baru
+	git log --all --decorate --oneline --graph = untuk melihat perjalanan pembuatan atau penghapusan branch
+	alias graph="git log --all --decorate --oneline --graph" = membuat alias graph untuk fungsi diatas
+	git checkput <nama_branch> = untuk berpindah branch
+	
+	Merge di bagi 2
+	- fast forward = terjadi ketika branch ada pada jalur
+	- three-way merge
+	
+	perintah
+		branch harus berada pada branch yang akan di gabungkan contok ingin menggabungkan dosen dengan master
+		maka harus masuk dulu ke dalam branch master lalu bisa di gabungkan
+	git merge <file> = menggabungkan branch kedalam branch yang sedang dipilih
+	git branch --merge = untuk mengetahui branch mana saja yang sudah di merge
+	git branch -d <nama_branch> = untuk menghapus branch tertentu yang sudah di merge
+	git branch -D <nama_branch> = menghapus branch yang belum di merge

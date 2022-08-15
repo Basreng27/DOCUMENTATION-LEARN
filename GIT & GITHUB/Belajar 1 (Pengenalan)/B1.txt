@@ -1,0 +1,12 @@
+Istilah dalam Git
+
+- Repo = Folder dari project kita / project yang d jalankan
+- Commit = Rekaman / Snapshot dari repo kita / Save dalam github & Git
+- Hash = Penanda unik pada sebuah commit / bisa disebut primary key untuk commit
+- Checkout = Berpindah ke sebuah commit / load pada commit sebelumnya
+- Branch = Cabang bebas dari sebuah commit / percabangan sebuah pengerjaan projrct
+- merge = Menggabungkan branch
+- Remote = Sumber yang memiliki repo / Github
+- Clone = Mengambil Repo dari remote
+- Push = Mengirimkan commit ke repo
+- Pull Mengambil commit dari repo

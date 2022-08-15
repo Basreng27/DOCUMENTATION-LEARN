@@ -1,0 +1,27 @@
+link : https://www.youtube.com/watch?v=Q3Id0DgcrXY&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf&index=2
+
+buka website github di : https://github.com/
+kemudian klik sign up pada pojok kanan atas
+masukan data diri untuk regist:
+	mwandirayandra@gmail.com
+	rawama327
+	username : RayandraWandiMarselana
+kemudian lengkapi data diri
+lalu masuk ke "Repositories" dan clik new di kana warna hijau
+dan kemudian buat repository baru :
+	Ray-Resolusi
+
+kemudian buat file baru di add file -> create new flie
+	ray-resolusi.txt
+kemudian scroll ke bawah lalu "commit new file" (sama seperti simpan)
+	*Selalu di isi judul dan apa saja yang di commit
+kemudian click "commit new file"
+
+lalu jika ingin edit klik file yang ingin di edit 
+lalu klik gambar pensil "edit this file"
+kemudian edit apa saja yang di inginkan
+lalu Selalu di isi judul dan apa saja yang di commit
+
+kemudian untuk melihat apa history apa saja yang di rubah
+klik file yang tertentu
+dan klik history di bagian agak atas

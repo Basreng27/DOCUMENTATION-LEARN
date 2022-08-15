@@ -1,0 +1,45 @@
+link : https://www.youtube.com/watch?v=ppi_M-FX1CY&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf&index=8
+
+belajar git dengan local
+
+remote = github
+
+jenis gitremote = github, gitlab, gitbucket
+
+jika sudah punya di github dan tidak ada di local
+clone menggunakan https :
+	kemudian copy link httpsnya
+	lalu cari ke file exploler tempat untuk penyimpanan file
+	lalu klik kanan pada folder yang ingin di simpan filenya
+	lalu klik gitbash dan tunggu terbuka
+	perintah
+		git clone <link https> = untuk membuat clone dari github yang sudah di copy link httpsnya
+	setelah itu enter
+	setelah itu reponya sudah terhubung langsung ke github
+	lalu masuk ke dalam reponya preintah "cd <nama repo>"
+	perintah
+		git remote = 'isinya origin' origin yaitu nama default dari remote
+		git remote -v = -v yaitu perpose untuk melihat data lebih detail bukan nama remote saja
+		git push = untuk mengupdate/mengirimkan data yang sudah commit local ke github atau lainnya
+		mengganti username dan password
+			git config --list = melihat config seperti username dan password
+			untuk keluar ":q"
+			git config --global / -- local user.name "<nama>" = ganti nama
+			git config --global / -- local user.email "<email>" = ganti email
+			
+sudah ada di local tapi tidak ada di github
+	perintah
+	cd .. = keluar dari folder
+	mkdir <nama repo> = cara membuat folder di gitbash
+	untuk menyimpan ke github harus membuat repo baru
+	membuat repo seperti biasa tapi jangan di ceklis readme nya
+	kemudian cari : …or push an existing repository from the command line
+	dan ikuti seperti apa yang di katakannya
+	lalu copykan linknya yang https dan masukan ke gitbash
+	perintah
+		git remote add <nama clone> <link github https> = untuk membuat remote
+		git branch -M <nama branch>
+		git push -u <nama clone> <nama branch> = untuk menyimpan ke github agar ke depannya hanya perlu git push saja
+		
+		git fetch = untuk mengecek sama atau tidak commit local dengan github
+		git pull = mengambil data yang tidak ada di local

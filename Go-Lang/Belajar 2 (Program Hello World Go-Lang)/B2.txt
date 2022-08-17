@@ -15,3 +15,4 @@ perintah
 	ls -l = untuk mengecek ada file apa saja
 	go build <nama file>.go = untuk membuild file terlebih dahulu menjadi .exe
 	./<nama file> = mengeksekusi file
+	

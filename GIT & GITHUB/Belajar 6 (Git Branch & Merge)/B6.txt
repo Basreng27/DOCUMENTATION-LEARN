@@ -8,7 +8,7 @@ Perintah
 	git branch <nama_branch> = untuk membuat branch baru atau cabang baru
 	git log --all --decorate --oneline --graph = untuk melihat perjalanan pembuatan atau penghapusan branch
 	alias graph="git log --all --decorate --oneline --graph" = membuat alias graph untuk fungsi diatas
-	git checkput <nama_branch> = untuk berpindah branch
+	git checkout <nama_branch> = untuk berpindah branch
 	
 	Merge di bagi 2
 	- fast forward = terjadi ketika branch ada pada jalur

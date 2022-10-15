@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!--======================================== Nilai Prioritas Operator JavaScript ======================================== -->
+    <h2>Nilai Prioritas Operator JavaScript</h2>
+    <h4>Prioritas Operator</h4>
+    <h5>Ekspresi dalam tanda kurung dihitung sebelum ekspresi lainnya
+        Fungsi dieksekusi sebelum hasilnya digunakan di sisa ekspresi</h5>
+    Val | Operator | Deskripsi | Contoh  <br>
+    18  | ( ) | Pengelompokan Ekspresi | (100 + 50) * 3<br>
+    17  | . | Anggota dari | person.name<br>
+    17  | [] | Anggota | person["nama"]<br>
+    17 | ?. | Opsional Chaining ES2020 | x?. kamu<br>
+    17  | () | Panggilan Fungsi | myFunction()<br>
+    17  | baru | Baru dengan Argumen | new date("5 Juni ,2022")<br>
+    16  | baru | Baru tanpa Argumen | new Date()<br>
+    
+    <h4>Operator Kenaikan</h4>
+    <h5>Peningkatan posfix dieksekusi sebelum penambahan awalan</h5>
+    Val | Operator | Deskripsi | Contoh  <br>
+    15 | ++ | Kenaikan Postfix | i++<br>
+    15 | -- | Penurunan Postfix | i--<br>
+    14 | ++ | Peningkatan Awalan | ++i<br>
+    14 | -- | Penurunan Awalan | --i<br>
+    
+    <h4>NOT Operators</h4>
+    Val | Operator | Deskripsi | Contoh<br>
+    14 | ! | Logis TIDAK | !(x==y)<br>
+    14 | ~ | Sedikit demi sedikit TIDAK | ~x<br>
+
+    <h4>Operator Unary</h4>
+    Val | Operator | Deskripsi | Contoh<br>
+    14 | + | Unary Plus | +x<br>
+    14 | - | Unary Minus | -x<br>
+    14 | type of | Tipe Data | typeof x<br>
+    14 | void | Evaluasi Void | void(0)<br>
+    14 | delete | Properti Hapus | delete myCar.color<br>
+    
+    <h4>Arithmetic Operators</h4>
+    <h5>Eksponensial dieksekusi sebelum perkalian
+        Perkalian dan pembagian dieksekusi sebelum penambahan dan pengurangan</h5>
+    Val | Operator | Deskripsi | Contoh<br>
+    13 | ** | Eksponen ES2016 | 10 ** 2<br>
+    12 | * | Perkalian | 10 * 5<br>
+    12 | / | Divisi | 10 / 5<br>
+    12| % | Sisa Divisi | 10% 5<br>
+    11 | + | Penambahan | 10 + 5<br>
+    11 | - | Pengurangan | 10 - 5<br>
+    11 | + | Penggabungan | "John" + "Doe"<br>
+        
+    <h4>Shift Operators</h4>
+    Val | Operator | Deskripsi | Contoh<br>
+    10 | << | Geser Kiri | x << 2<br>
+    10 | >> | Shift Kanan (bertanda tangan)|  x >> 2<br>
+    10 | >>> | Shift Kanan (unsigned)|  x >>> 2<br>
+    
+    <h4>Relational Operators</h4>
+    Val | Operator | Deskripsi | Contoh<br>
+    9 | di Properti di Objek | "PI" di Math<br>
+    9 | instanceof Instance Object | x instanceof Array<br>
+    
+    <h4>Operator Perbandingan</h4>
+    Val | Operator | Deskripsi | Contoh<br>
+    9 | < | Kurang dari | x < y<br>
+    9 | <= | Kurang dari  atau sama dengan  | x <= y<br>
+    9 | > | Lebih besar  dari x > y<br>
+    9 | >= | Lebih besar  dari atau sama dengan  | x >= Array<br>
+    8 | == | Sama dengan | x == y<br>
+    8 | === | Ketat sama | x === y<br>
+    8 | != | Tidak sama  dengan |  x != y<br>
+    8 | !== | Ketat tidak  sama  | x !== y<br>
+    
+    <h4>Bitwise Operators</h4>
+    Val | Operator | Deskripsi | Contoh<br>
+    7 | & | BItwiseAND | x & y<br>
+    6 | ^ | Bitwise XOR | x ^ y<br>
+    5 | | | Bitwise OR | x | y<br>
+    
+    <h4>Logical Operators</h4>
+    Val | Operator | Deskripsi | Contoh<br>
+    4 |	&&	| Logical AND |	x && y<br>
+    3 |	||	| Logical OR | x || y<br>
+    3 |	??	| Nullish Coalescing ES2020 |	x ?? y<br>
+    
+    <h4>Conditional (ternary) Operator</h4>
+    Val | Operator | Deskripsi | Contoh<br>
+    2 |	? : |	Condition |	? "yes" : "no"<br>
+    
+    <h4>Operator Penugasan</h4>
+    <h5>Tugas dieksekusi setelah operasi lain</h5>
+    Val | Operator | Deskripsi | Contoh<br>
+    2 | = | Tugas Sederhana | x + y<br>
+    2 | : | Tugas Titik Dua | x: 5<br>
+    2 | += | Tugas Penambahan | x += y<br>
+    2 | -= | Tugas Pengurangan | x -= y<br>
+    2 | *= | Tugas Perkalian | x *= y<br>
+    2 | **= | Tugas Eksponen | x **= y<br>
+    2 | /= | Pembagian Tugas | x /= y<br>
+    2 | %= | Sisa Tugas | x %= y<br>
+    2 | <<= | Tugas Shift Kiri | x <<= y<br>
+    2 | >>= | Tugas Shift Kanan | x >>= y<br>
+    2 | >>>= | Geser Kanan Tidak Bertanda | x >>>= y<br>
+    2 | &= | Sedikit demi sedikit DAN Tugas | x &= y<br>
+    2 | |= | Bitwise ATAU Tugas | x |= y<br>
+    2 | ^= | Tugas XOR Bitwise | x ^= y<br>
+    2 | &&= | Logika DAN Tugas | x &= y<br>
+    2 | ||= | Logika ATAU Tugas | x ||= y<br>
+    2 | => | Panah | x => y<br>
+    2 | hasil |  |Jeda / Lanjutkan | yield x<br>
+    2 | hasil* Hasil | yield* x<br>
+    2 | ... | Menyebar | ... x<br>
+    <br>
+    1 | , | Koma | x , y<br>
+    <p>============================================================================================================================================</p>
+    
+</body>
+
+</html>

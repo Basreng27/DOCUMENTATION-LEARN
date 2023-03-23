@@ -20,14 +20,15 @@ Route::get('/', function () {
 /*
     contoh route
 
-    Route::get($uri, $callback)
-    Route::post($uri, $callback)
-    Route::put($uri, $callback)
-    Route::patch($uri, $callback)
-    Route::delete($uri, $callback)
-    Route::options($uri, $callback)
-    Route::redirect($darimana, $kemana)
+    Route::get(uri, callback)
+    Route::post(uri, callback)
+    Route::put(uri, callback)
+    Route::patch(uri, callback)
+    Route::delete(uri, callback)
+    Route::options(uri, callback)
+    Route::redirect(darimana, kemana)
     Route::fallback(closure);
+    Route::view(uri, template, array);
 */
 
 Route::get('/rwm', function () {
@@ -39,4 +40,14 @@ Route::redirect('/yt', '/rwm');
 // fallback route = untuk mengakses halam tidak ada diarahkan kesini
 Route::fallback(function () {
     return "404";
+});
+
+// langsung menampilkan di route ke view
+Route::view('/view', 'hello', ['name' => 'Rayandra Wandi Marselana']);
+Route::get('/viewGet', function () {
+    return view('hello', ['name' => 'Wandi']);
+});
+// jika file view di dalam folder, menyambungkannya menggunakan . bukan /
+Route::get('/hai', function () {
+    return view('hello.hai', ['name' => 'Wandi']);
 });

@@ -33,4 +33,31 @@ class RoutingTest extends TestCase
         $this->get("/tidakada")
             ->assertSeeText("404");
     }
+
+    public function testRouteParameter()
+    {
+        $this->get('/productss/1')
+            ->assertSeeText('Product : 1');
+
+        $this->get('/products/123/items/ABC')
+            ->assertSeeText('Product : 123, Item : ABC');
+    }
+
+    public function testRouteParameterRegex()
+    {
+        $this->get('/categories/123456')
+            ->assertSeeText('Categories : 123456');
+
+        $this->get('/categories/salah')
+            ->assertSeeText('404');
+    }
+
+    public function testRouteOptionalParameter()
+    {
+        $this->get('/users/123456')
+            ->assertSeeText('User : 123456');
+
+        $this->get('/users/')
+            ->assertSeeText('User : 404');
+    }
 }

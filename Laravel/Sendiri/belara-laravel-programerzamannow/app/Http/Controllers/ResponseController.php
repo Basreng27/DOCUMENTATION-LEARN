@@ -15,7 +15,6 @@ class ResponseController extends Controller
         return response("Hello Response");
     }
 
-
     public function header(Request $request): HttpResponse
     {
         $body = [

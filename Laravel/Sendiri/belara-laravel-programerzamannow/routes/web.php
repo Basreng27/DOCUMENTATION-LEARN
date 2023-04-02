@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\SessionController;
 use App\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Support\Facades\Route;
 
@@ -206,7 +207,6 @@ Route::middleware(['sample:PZN,401'])
         });
     });
 
-
 // Url current
 // url()->curent() = medapat url saat ini tanpa query param
 // url()->fuul() = medapat url saat ini dengan query param
@@ -220,3 +220,10 @@ Route::get('/url/action', function () {
     // return url()->action([\App\Http\Controllers\FormController::class, 'form'], []);
     return \Illuminate\Support\Facades\URL::action([\App\Http\Controllers\FormController::class, 'form'], []);
 });
+
+// session
+Route::get('/session/create', [SessionController::class], 'createSession');
+// Route::get('/session/create', [
+//     \App\Http\Controllers\SessionController::class,
+//     'createSession'
+// ]);

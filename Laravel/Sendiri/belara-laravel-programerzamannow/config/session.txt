@@ -1,0 +1,25 @@
+Method Session
+
+-> Menyimpan data dengan key dan value
+put(key,value)
+
+-> Menambah data ke array dengan key dan value
+push(key,value)
+
+-> Mengambil data di array, dan menghapusnya
+pull(key,value)
+
+-> Menaikkan value session
+increment(key,increment)
+
+-> Menurunkan value session
+decrement(key,decrement)
+
+-> menghapus data session
+forget(key,value)
+
+-> menghapus semua data session
+flush()
+
+-> menghapus semua data session dan membuat baru
+invaldate()
